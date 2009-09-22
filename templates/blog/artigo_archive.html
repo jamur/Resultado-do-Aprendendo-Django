@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block conteudo %}
+
+<img src="{{ MEDIA_URL }}foto.jpg"/>
+
+{% for artigo in latest %}
+    <div class="artigo">
+        <!--<a href="{{ artigo.get_absolute_url }}"><h2>{{ artigo.titulo }}</h2></a>-->
+        <a href="{% url blog.views.artigo artigo_id=artigo.id %}"><h2>{{ artigo.titulo }}</h2></a>
+        <div class="conteudo">
+            <!--Publicado {{ artigo.publicacao|date:"d \d\e F \d\e Y"}}<br/>-->
+            Publicado há {{ artigo.publicacao|timesince}}<br/>
+            {{ artigo.conteudo }}
+        </div
+    </div>
+{% endfor %}
+{% endblock %}
+

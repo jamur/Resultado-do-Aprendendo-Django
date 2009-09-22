@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>{% block titulo %}Blog do Alatazan{% endblock %}</title>
+<link rel="alternate" type="application/rss+xml" title="Ultimos artigos do Alatazan" href="/rss/ultimos/" />
+<link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}layout.css"/>
+</head>
+
+<body>
+
+<h1>{% block h1 %}Blog do Alatazan{% endblock %}</h1>
+
+{% block conteudo %}{% endblock %}
+
+{% include "rodape.html" %}
+
+</body>
+</html>
+
