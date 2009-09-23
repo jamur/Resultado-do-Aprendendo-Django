@@ -33,3 +33,10 @@ h2 {
     padding: 10px;
 }
 
+form label {
+    display: block;
+}
+
+textarea {
+    height: 100px;
+}

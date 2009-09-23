@@ -83,6 +83,7 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.syndication',
     'django.contrib.flatpages',
+    'django.contrib.comments',
 
     'meu_blog.blog',
 )
