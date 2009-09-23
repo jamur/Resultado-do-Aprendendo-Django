@@ -25,5 +25,6 @@ urlpatterns = patterns('',
     (r'^artigo/(?P<artigo_id>\d+)/$', 'blog.views.artigo'),
     (r'^media/(.*)$', 'django.views.static.serve',
         {'document_root': settings.MEDIA_ROOT}),
+    (r'^contato/$', 'views.contato'),
 )
 

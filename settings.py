@@ -86,3 +86,10 @@ INSTALLED_APPS = (
 
     'meu_blog.blog',
 )
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'rjamur@gmail.com'
+EMAIL_HOST_PASSWORD = 'wysiwyG910fred22'
+EMAIL_SUBJECT_PREFIX = '[Blog do Alatazan]'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
